@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="500dp"
+        android:layout_height="320dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/pop_up_box_bg" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:text="@string/pay_center_title"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/one_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="60dp"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/one_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pay_center_goods_name"
+                android:textColor="#888888"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/one_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/one_text1"
+                android:text="100000金币"
+                android:textColor="#888888"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/one_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="￥10"
+                android:textColor="#888888"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/one_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/one_text2"
+                android:text="@string/pay_center_goods_price"
+                android:textColor="#888888"
+                android:textSize="14sp" />
+        </RelativeLayout>
+        
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="82dp"
+            android:background="#cccccc" />
+
+        <RelativeLayout
+            android:id="@+id/two_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/one_layout"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp" >
+
+            <GridView
+                android:id="@+id/pay_center_channel_gridview"
+                android:layout_width="fill_parent"
+                android:layout_height="120dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:horizontalSpacing="10dp"
+                android:verticalSpacing="10dp"
+                android:stretchMode="columnWidth"
+                android:numColumns="4"
+                android:listSelector="@drawable/egame_blue_button_normal" >
+            </GridView>
+            
+            <Button
+                android:id="@+id/two_btn"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="150dp"
+                android:background="@drawable/pay_center_btn_selector"
+                android:text="@string/pay_center_confirm"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="264dp"
+            android:background="#cccccc" />
+
+        <TextView
+            android:id="@+id/footer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:text="@string/pay_center_contact_qq"
+            android:textColor="#bbbbbb"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:drawableLeft="@drawable/pay_center_btn_close_selector"
+            android:textColor="#888888" />
+    </RelativeLayout>
+
+</RelativeLayout>
