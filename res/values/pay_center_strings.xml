@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pay_center_title">支付中心-选择支付方式</string>
+    <string name="pay_center_goods_name">购买：</string>
+    <string name="pay_center_goods_price">价格：</string>
+    <string name="pay_center_confirm">确  认</string>
+    <string name="pay_center_contact_qq">客服QQ：800061676</string>
+    <string name="pay_center_process_dialog_msg">正在创建订单，请稍后</string>
+    
+    <string-array name="channels">
+        <item>inc_start_001</item>
+        <item>inc_start_002</item>
+        <item>inc_start_003</item>
+        <item>inc_start_004</item>
+        <item>inc_start_005</item>
+    </string-array>
+    
+</resources>

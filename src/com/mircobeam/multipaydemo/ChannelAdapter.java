@@ -1,5 +1,8 @@
 package com.mircobeam.multipaydemo;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +12,7 @@ import android.widget.ImageView;
 public class ChannelAdapter extends BaseAdapter
 {
 	private Context mContext;
+	private List<Integer> mList;
 	
 	public ChannelAdapter(Context context)
 	{
@@ -18,7 +22,8 @@ public class ChannelAdapter extends BaseAdapter
 	@Override
 	public int getCount()
 	{
-		return mThumbIds.length;
+		parseArrayToList();
+		return mList.size();
 	}
 
 	@Override
@@ -38,13 +43,21 @@ public class ChannelAdapter extends BaseAdapter
 	{
 		View view = View.inflate(mContext, R.layout.pay_ceter_channel_layout, null);
 		ImageView imageView = (ImageView) view.findViewById(R.id.itemImage);
-		imageView.setImageResource(mThumbIds[position]);
+		imageView.setImageResource(mList.get(position));
 		
 		return view;
 	}
 	
-    private Integer[] mThumbIds = {R.drawable.inc_start_001, R.drawable.inc_start_002,
-    								R.drawable.inc_start_003, R.drawable.inc_start_004,
-    								R.drawable.inc_start_005, R.drawable.inc_start_006};
-
+	private void parseArrayToList()
+	{
+		String[] mChannels = mContext.getResources().getStringArray(R.array.channels);
+		
+		mList = new ArrayList<Integer>();
+		
+		for(int i = 0; i<mChannels.length; i++)
+		{
+			
+			mList.add(mContext.getResources().getIdentifier(mChannels[i], "drawable", mContext.getPackageName()));
+		}
+	}
 }

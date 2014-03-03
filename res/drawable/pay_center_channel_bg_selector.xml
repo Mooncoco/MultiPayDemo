@@ -2,7 +2,7 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:drawable="@drawable/pay_center_close" android:state_window_focused="false"/>
-    <item android:drawable="@drawable/egame_blue_button_press" android:state_focused="false" android:state_pressed="true"/>
-    <item android:drawable="@drawable/egame_blue_button_press" android:state_focused="false" android:state_selected="true"/>
+    <item android:drawable="@drawable/pay_center_blue_button_press" android:state_focused="false" android:state_pressed="true"/>
+    <item android:drawable="@drawable/pay_center_blue_button_press" android:state_focused="false" android:state_selected="true"/>
 
 </selector>
