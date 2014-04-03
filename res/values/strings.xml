@@ -4,6 +4,20 @@
     <string name="app_name">MultiPayDemo</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-    <string name="text_multipay">YOU CAN CLICK HERE !</string>
+    <string name="text_login">YOU CAN CLICK HERE TO LOGIN !</string>
+    <string name="text_multipay">YOU CAN CLICK HERE TO PAY !</string>
+    <string name="text_insert">INSERT DATA TO SQLITE !</string>
+    <string name="text_update">UPDATE DATA IN SQLITE !</string>
+    <string name="text_delete">DELETE DATA FROM SQLITE !</string>
+    <string name="text_start_service">START SERVICE !</string>
+    <string name="text_stop_service">STOP SERVICE !</string>
+    <string name="text_open_listview">OPEN A LISTVIEW !</string>
+    <string name="text_sound_record">OPEN SOUND RECORD ACTIVITY !</string>
+    <string name="button_start">开始录音</string>
+    <string name="button_stop">停止录音</string>
+    <string name="button_play">播放录音</string>
+    <string name="button_send">发送录音</string>
+    <string name="button_delete">删除录音</string>
+    <string name="login_process_dialog_msg">正在登录，请稍候</string>
     <string name="exit_toast">再按一次退出程序</string>
 </resources>
